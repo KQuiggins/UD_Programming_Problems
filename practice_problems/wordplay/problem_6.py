@@ -6,4 +6,4 @@ with open('sowpods.txt', 'r') as f:
     for word in words:
         if "B" in word and "X" in word and len(word) < 5:
             print(word)
-            break
+            

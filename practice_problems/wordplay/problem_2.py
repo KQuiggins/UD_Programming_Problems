@@ -5,6 +5,5 @@ with open('sowpods.txt', 'r') as f:
     for word in words:
         if 'X' in word and 'Y' in word and 'Z' in word:
             print(word)
-            print('\n')
-        else:
-            continue
+            
+        

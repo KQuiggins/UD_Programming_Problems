@@ -7,4 +7,4 @@ with open('sowpods.txt', 'r') as f:
             continue
         else:
             print(word)
-            break
+            
