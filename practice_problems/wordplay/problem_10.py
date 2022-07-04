@@ -8,5 +8,5 @@ with open('sowpods.txt', 'r') as f:
     for word in words:
         if "TYPE" in word:
             count += 1
-            continue
+            
     print(count)
