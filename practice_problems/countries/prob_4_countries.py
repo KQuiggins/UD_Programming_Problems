@@ -12,5 +12,8 @@ with open('countries.txt', 'r') as f:
             ties = []
         elif len(word) == len(shortest_word):
             ties.append(word)
-    print(ties)
-    print(shortest_word)
+
+    for tie in ties:
+        print(tie)
+    
+print(shortest_word)
