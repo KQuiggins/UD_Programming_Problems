@@ -9,11 +9,15 @@ with open('countries.txt', 'r') as f:
     for word in words:
         if len(word) < len(shortest_word):
             shortest_word = word
-            ties = []
-        elif len(word) == len(shortest_word):
+            
+        if len(word) == len(shortest_word):
             ties.append(word)
 
     for tie in ties:
-        print(tie)
+        if len(tie) == len(shortest_word):
+            print(tie)
+
+
+
     
 print(shortest_word)
