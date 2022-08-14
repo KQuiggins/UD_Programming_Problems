@@ -3,4 +3,5 @@
 with open('bNames2020.txt', 'r') as f:
     names = f.read().splitlines()
     
-    
+    for i in range(len(names)):
+        for j in names
