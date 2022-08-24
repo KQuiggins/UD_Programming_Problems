@@ -5,7 +5,7 @@ from time import process_time
 
 URL = "https://api.dictionaryapi.dev/api/v2/entries/en/"
 r = requests.get(url = URL)
-found_words = []
+found_words = set()
 
 with open('bNames2020.txt', 'r') as f:
     names = f.read().splitlines()
@@ -16,13 +16,12 @@ with open('bNames2020.txt', 'r') as f:
         rev = names[i][::-1].lower()
         r = requests.get(url = URL + rev)
         if r.status_code == 200:
-            found_words.append(rev)
-            found_words.append(names[i])
+            found_words.add(rev)
+            found_words.add(names[i])
         
     end = process_time() # end timer
 
     print(end, start) # print start and end times
     print(end-start) # print time difference
+
     print(found_words)
-        
-        
