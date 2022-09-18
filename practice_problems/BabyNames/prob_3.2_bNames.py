@@ -21,7 +21,8 @@ with open('bNames2020.txt', 'r') as f:
         
     end = process_time() # end timer
 
-    print(end, start) # print start and end times
-    print(end-start) # print time difference
-
-    print(found_words)
+    print(f"Time Started: {start}")  # print start and end times
+    print(f"Time Ended: {end}")
+    total_time = start - end
+    print(f"Total time to process request using a set: {total_time}")  # print time difference
+    print(f"Names found when spelled backwards that are valid scrabble words: {found_words}")

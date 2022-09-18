@@ -4,8 +4,11 @@ with open('bNames1880.txt', 'r') as f1, \
 open('bNames2020.txt', 'r') as f2:
     names1 = f1.read()
     names2 = f2.read()
+    print(f"Names in 1880:")
     print(names1)
+    print(f"Names in 2020:")
     print(names2)
+    
 
     
 
